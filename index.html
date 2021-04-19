@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison & Contrast Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="grid-container">
+        <div class="grid-item"><p class="points">100</p></div>
+        <div class="grid-item"><button id="b_q1" class="question-button-1">1</button></div>
+        <div class="grid-item"><button id="b_q2" class="question-button-1">2</button></div>
+        <div class="grid-item"><button id="b_q3" class="question-button-1">3</button></div>
+        <div class="grid-item"><button id="b_q4" class="question-button-1">4</button></div>
+        <div class="grid-item"><button id="b_q5" class="question-button-1">5</button></div>
+        <div class="grid-item"><p class="points">200</p></div>
+        <div class="grid-item"><button id="b_q6" class="question-button-2">6</button></div>
+        <div class="grid-item"><button id="b_q7" class="question-button-2">7</button></div>
+        <div class="grid-item"><button id="b_q8" class="question-button-2">8</button></div>
+        <div class="grid-item"><button id="b_q9" class="question-button-2">9</button></div>
+        <div class="grid-item"><button id="b_q10" class="question-button-2">10</button></div>
+        <div class="grid-item"><p class="points">300</p></div>
+        <div class="grid-item"><button id="b_q11" class="question-button">11</button></div>
+        <div class="grid-item"><button id="b_q12" class="question-button">12</button></div>
+        <div class="grid-item"><button id="b_q13" class="question-button">13</button></div>
+        <div class="grid-item"><button id="b_q14" class="question-button">14</button></div>
+        <div class="grid-item"><button id="b_q15" class="question-button">15</button></div>
+ 
+
+        <div id="modal_container_1" class="modal_container">
+            <div class="modal">
+                <h2 class="rubric_title" id="rubric_title_1">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_1"> -The difference is described <br> according to the video and <br> a contrast word is used <br> correctly. - <strong>100%</strong> <br><br>
+                The previous two points are<br>not met - <strong>0%</strong>    
+                </p>
+                <h1>Direction. Regarding the video, Write a sentence describing the difference between weather and climate using a contrast word.</h1>
+                <iframe width="720" height="420" src="https://www.youtube.com/embed/vH298zSCQzY?start=1&end=50&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_1">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_1">100</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_1_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_1_1">0</label>
+                    <label class="checkbox" id="show_points_1_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_1_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_1_2">0</label>
+                    <label class="checkbox" id="show_points_1_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_1_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_1_3">0</label>
+                    <label class="checkbox" id="show_points_1_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_1_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_1_4">0</label>
+                    <label class="checkbox" id="show_points_1_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_1_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_1_5">0</label>
+                    <label class="checkbox" id="show_points_1_5">0</label>
+                </div>
+                <button id="start_timer_1" class="start_timer">Start timer</button>
+                <button class="button_close" id="close_1">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_2" class="modal_container">
+            <div class="modal">
+                <h2 class="rubric_title" id="rubric_title_2">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_2"> Right Answer - <strong>100%</strong> <br><br>
+                Wrong answer- <strong>0%</strong>    
+                </p>
+                <h1>Which classification of comparison and contrast words is correct?</h1>
+                <h2 id="list_of_2">List of Words</h2>
+                <p id="text_2">1. For instance <br>2. Likewise<br>3. In a similar fashion<br>4. Resemble<br>5. Hence<br>6. Conversely<br>7. As opposed to<br>8. In like manner<br>9. Nevertheless<br>10. Still<br><br></p>
+                
+                <p id="ans_2"><strong>A. Comparison:</strong> 1, 2, 3 , 4, 5, 9. <strong>Contrast:</strong>  6, 7, 8, 10. <br> <strong>B. Comparison:</strong> 6, 7, 9, 10. <strong>Contrast:</strong> 2, 3, 4, 8. <br><strong>C. Comparison:</strong> 2, 3, 4, 8. <strong>Contrast:</strong>  6, 7, 9, 10.<br> <strong>D. Comparison:</strong> 2, 3, 4, 5. <strong>Contrast:</strong>  9, 10, 7. <br></p>
+                
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_2">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_2">100</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_2_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_2_1">0</label>
+                    <label class="checkbox" id="show_points_2_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_2_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_2_2">0</label>
+                    <label class="checkbox" id="show_points_2_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_2_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_2_3">0</label>
+                    <label class="checkbox" id="show_points_2_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_2_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_2_4">0</label>
+                    <label class="checkbox" id="show_points_2_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_2_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_2_5">0</label>
+                    <label class="checkbox" id="show_points_2_5">0</label>
+                </div>
+                <button class="button_close" id="close_2">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_3" class="modal_container">
+            <div class="modal">
+                <h2 class="rubric_title" id="rubric_title_3">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_3"> It has a comparison word  used properly, and it <br> describes a similarity in the pictures. - <strong>100%</strong>
+                </p>
+                <h1>Write a comparison sentence describing a similarity in the pictures.</h1>
+                <div>
+                    <img id="img_3_1" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/San_Sebastian_Bernal.jpg" alt="Bernal">
+                </div>
+                <p id="chart_place_1" ><strong>Bernal</strong></p>
+                <div>
+                    <img id="img_3_2"src="https://foodandtravel.mx/wp-content/uploads/2019/05/AntiguaGuatemalaArcodeSantaCatalina.jpg" alt="Antigua Guatemala">
+                </div>
+                <p id="chart_place_2" ><strong>Antigua Guatemala</strong></p>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_3">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_3">100</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_3_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_3_1">0</label>
+                    <label class="checkbox" id="show_points_3_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_3_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_3_2">0</label>
+                    <label class="checkbox" id="show_points_3_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_3_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_3_3">0</label>
+                    <label class="checkbox" id="show_points_3_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_3_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_3_4">0</label>
+                    <label class="checkbox" id="show_points_3_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_3_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_3_5">0</label>
+                    <label class="checkbox" id="show_points_3_5">0</label>
+                </div>
+                <button class="button_close" id="close_3">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_4" class="modal_container">
+            <div class="modal">
+                <h2 class="rubric_title" id="rubric_title_4">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_4"> It has a contrast word <br>used properly, and it <br> describes a difference <br> in the pictures. - <strong>100%</strong>
+                </p>
+                <h1>Write a difference between the pictures using a contrast sentence. </h1>
+                <div id="img_4_1">
+                    <iframe src="https://giphy.com/embed/YMGD9DOYLfwBoyOZ8h" width="600" height="370" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tytaniumacademy-tytanium-ideas-lodi-iron-works-YMGD9DOYLfwBoyOZ8h">via GIPHY</a></p>
+                </div>
+                <div id="img_4_2">
+                    <iframe src="https://giphy.com/embed/3o6nV744d5aZcYPlnO" width="600" height="370" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/mdr-autos-ki-3o6nV744d5aZcYPlnO">via GIPHY</a></p>
+                </div>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_4">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_4">100</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_4_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_4_1">0</label>
+                    <label class="checkbox" id="show_points_4_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_4_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_4_2">0</label>
+                    <label class="checkbox" id="show_points_4_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_4_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_4_3">0</label>
+                    <label class="checkbox" id="show_points_4_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_4_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_4_4">0</label>
+                    <label class="checkbox" id="show_points_4_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_4_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_4_5">0</label>
+                    <label class="checkbox" id="show_points_4_5">0</label>
+                </div>
+                <button class="button_close" id="close_4">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_5" class="modal_container">
+            <div class="modal">
+                <h2 class="rubric_title" id="rubric_title_5">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_5"> - 3 Right answers- <strong>100%</strong> <br>
+                - 2 Right answers - <strong>70%</strong> <br>
+                - 1 Right answer - <strong>40%</strong>  <br>
+                - 0 Right answer - <strong>0%</strong>    
+                </p>
+                <h1>Direction. Read the paragraph and answer the questions.</h1>
+                <p id="text_5">"Energy use often causes the biggest environmental impact for products that consume much energy during their use, like refrigerators and cars. <br>Creating a lighter weight car can save far more energy than reducing the embodied energy* of its materials. Likewise, to make a refrigerator <br> or building more energy efficient, you’ll need to have good insulation and optimize heat transfer." (Faludi, 2016) <br><br>
+                Question 1. What relationship is used in this paragraph?<br>
+                A) Comparison <br>
+                B) Contrast <br>
+                C) Comparison and contrast <br>
+                D) Hyperbole <br><br>
+
+                Question 2. What two things are being compared or contrasted? <br><br>
+
+                Question 3. What is a comparison or contrast word used in the paragraph?<br><br>
+                *Embodied Energy. "A material’s embodied energy is the energy that must be used to extract, transport, and process the material."(Faludi, 2015) <br><br>
+                <p id="reference_8">Reference. <br>
+
+                    Faludi, J. (2018, May 24). Physical Properties of Materials, Choosing Green Materials. [Video]. YouTube. <br>
+                    https://www.youtube.com/watch?v=amgywLrR_iY&t=12s  <br><br>
+    
+                    Faludi, J. (2015, July 9). Environmental Properties of Materials, How to Choose Green  Materials [Video]. <br> YouTube. 
+                    https://www.youtube.com/watch?v=I3tfQeIzofE</p>
+                
+                </p>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_5">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_5">100</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_5_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_5_1">0</label>
+                    <label class="checkbox" id="show_points_5_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_5_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_5_2">0</label>
+                    <label class="checkbox" id="show_points_5_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_5_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_5_3">0</label>
+                    <label class="checkbox" id="show_points_5_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_5_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_5_4">0</label>
+                    <label class="checkbox" id="show_points_5_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_5_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_5_5">0</label>
+                    <label class="checkbox" id="show_points_5_5">0</label>
+                </div>
+                <button class="button_close" id="close_5">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_6" class="modal_container">
+            <div class="modal">
+                <h1>Write a comparison sentence with a topic and another contrast sentence with another topic.</h1>
+                <h2 class="rubric_title" id="rubric_title_6">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_6"> 2 correct sentences <strong>100%</strong><br><br>
+                    1 correct sentence <strong>50%</strong>
+                </p>
+                <div id="img_container_6">
+                    <img src="./assets/topics.png" alt="Topics">
+                </div>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_6">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_6">200</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_6_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_6_1">0</label>
+                    <label class="checkbox" id="show_points_6_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_6_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_6_2">0</label>
+                    <label class="checkbox" id="show_points_6_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_6_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_6_3">0</label>
+                    <label class="checkbox" id="show_points_6_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_6_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_6_4">0</label>
+                    <label class="checkbox" id="show_points_6_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_6_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_6_5">0</label>
+                    <label class="checkbox" id="show_points_6_5">0</label>
+                </div>
+                <button class="button_close" id="close_6">Close</button>
+            </div> 
+        </div>
+
+        
+        <div id="modal_container_7" class="modal_container">
+            <div class="modal">
+                <h1>The Tortoise and the Hare</h1>
+                <h2 class="rubric_title" id="rubric_title_7">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_7"> - The two sentences describe <br> what happened in the fable <br> and they have a contrast word. <br> - <strong>100%</strong>  <br><br> - One sentence described what <br> happened in the fable and it has <br> a contrast word - <strong>50%</strong>
+                </p>
+                <div id="audio_container_7"><audio controls="" controlslist="nodownload" src="https://arbolabc.nyc3.cdn.digitaloceanspaces.com/Cuentos_Infantiles/cuentos_en_ingles/Audios/Tortoise_hare.mp3"></audio></div>
+                <div id="text_container_7">Once upon a time there was a hare who spent all day bragging about how fast he could run. Tired of hearing him boast, the tortoise, challenged him to a race.
+
+                    “You must be kidding!” said the hare laughing. “I am so much faster than you.”
+                    
+                    “We shall see,” the tortoise replied.
+                    
+                    The next day, the animals of the forest gathered to watch the race. Everyone wanted to see if the tortoise could beat the hare.
+                    
+                    The bear started the race yelling “On you mark, get set, go!”
+                    
+                    The hare immediately raced ahead, running faster than ever. He looked back and saw the tortoise was only a few steps away from the starting line.
+                    
+                    “Foolish tortoise, ” thought the hare. “He is so slow. Why would he want to race me if he has no chance to win?”
+                    
+                    Confident that he was going to win the race, the hare decided to stop in the middle of the road to rest under a tree. The cool and pleasant shade of the tree was very relaxing, so much so that the hare fell asleep.
+                    
+                    Meanwhile, the tortoise continued walking slowly, but steady. He was determined not to give up. Soon, he found the hare sleeping peacefully.
+                    
+                    The tortoise was winning the race!
+                    
+                    When the tortoise approached the finish line, all the animals in the forest began cheering with excitement. The noise woke the hare, who could not believe his eyes: the tortoise was crossing the finish line and he had lost the race.<br>
+                    
+                    Resource taken from https://arbolabc.com/cuentos-en-ingles/clasicos/hare-and-turtle</div>
+
+                
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_7">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_7">200</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_7_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_7_1">0</label>
+                    <label class="checkbox" id="show_points_7_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_7_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_7_2">0</label>
+                    <label class="checkbox" id="show_points_7_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_7_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_7_3">0</label>
+                    <label class="checkbox" id="show_points_7_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_7_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_7_4">0</label>
+                    <label class="checkbox" id="show_points_7_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_7_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_7_5">0</label>
+                    <label class="checkbox" id="show_points_7_5">0</label>
+                </div>
+                <div id="rel_container_7"><span id="release_question_7"><strong></strong></span></div>
+                
+                <button id="start_timer_7" class="start_timer">Start timer</button>
+                <button class="button_close" id="close_7">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_8" class="modal_container">
+            <div class="modal">
+                <h1>Direction. Watch the video and place before every sentence a T if it is true or F if it is false, according to the video information.</h1>
+                <h2 class="rubric_title" id="rubric_title_8">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_8"> 3 out of 3 right answers - <strong>100%</strong> <br>
+                2 out of 3 right answers - <strong>70%</strong> <br>
+                1 out of 3 right answers - <strong>40%</strong> <br>
+                0 out of 3 right answers - <strong>0%</strong> </p>  
+                <div id="video_8">            
+                <iframe width="690" height="380" src="https://www.youtube.com/embed/UVkT59PmRdo?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> 
+                <p id="text_8"><strong>(   ) 1. </strong> Web and Internet are alike. <br>
+                <strong>(   ) 2. </strong>While the Internet is the network<br> that allows access to the Web, The Web <br> is just a collection of pages that contains information on them. <br>
+                <strong>(   ) 3. </strong>The Internet contains the Web, but <br>the Web is not the Internet.</p>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_8">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_8">200</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_8_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_8_1">0</label>
+                    <label class="checkbox" id="show_points_8_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_8_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_8_2">0</label>
+                    <label class="checkbox" id="show_points_8_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_8_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_8_3">0</label>
+                    <label class="checkbox" id="show_points_8_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_8_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_8_4">0</label>
+                    <label class="checkbox" id="show_points_8_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_8_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_8_5">0</label>
+                    <label class="checkbox" id="show_points_8_5">0</label>
+                </div>
+                <button id="start_timer_8" class="start_timer">Start timer</button>
+                <button class="button_close" id="close_8">Close</button>
+            </div> 
+        </div>
+        
+        <div id="modal_container_9" class="modal_container">
+            <div class="modal">
+                <h2 class="rubric_title" id="rubric_title_9">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_9"> There are two contrast sentences and two <br> comparison sentences, and their information is <br>accurate with the Venn Diagram. - <strong>100%</strong> <br><br> There are three sentences meeting the<br> requirements. - <strong>70%</strong> <br><br> There are two sentences meeting the <br> requirements - <strong>50%</strong> <br><br>
+                There is one sentence meeting the <br> requirements - <strong>30%</strong>
+                <h1>With the information at Venn Diagram, write two contrast sentences and two comparison sentences.</h1>
+                <div id="img_container_9">
+                    <img id="img_9"src="./assets/diagram_Venn.png" alt="Venn Diagram">
+                </div>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_9">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_9">200</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_9_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_9_1">0</label>
+                    <label class="checkbox" id="show_points_9_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_9_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_9_2">0</label>
+                    <label class="checkbox" id="show_points_9_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_9_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_9_3">0</label>
+                    <label class="checkbox" id="show_points_9_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_9_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_9_4">0</label>
+                    <label class="checkbox" id="show_points_9_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_9_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_9_5">0</label>
+                    <label class="checkbox" id="show_points_9_5">0</label>
+                </div>
+                <button class="button_close" id="close_9">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_10" class="modal_container">
+            <div class="modal">
+                <h1>Bonus... Time to rest! +10 points for everybody. </h1>
+                <iframe src="https://giphy.com/embed/fdlcvptCs4qsM" width="480" height="432" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/chill-fdlcvptCs4qsM">via GIPHY</a></p>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_10">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_10">200</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_10_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_10_1">0</label>
+                    <label class="checkbox" id="show_points_10_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_10_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_10_2">0</label>
+                    <label class="checkbox" id="show_points_10_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_10_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_10_3">0</label>
+                    <label class="checkbox" id="show_points_10_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_10_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_10_4">0</label>
+                    <label class="checkbox" id="show_points_10_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_10_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_10_5">0</label>
+                    <label class="checkbox" id="show_points_10_5">0</label>
+                </div>
+                <button class="button_close" id="close_10">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_11" class="modal_container">
+            <div class="modal">
+                <h2 class="rubric_title" id="rubric_title_11">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_11"> 4 Right answers <br> <strong>100%</strong> <br><br> 3 Right answers <br> <strong>70%</strong> <br><br> 2 Right answers <br> <strong>50%</strong> <br><br>
+                1 Right answer <br> <strong>30%</strong>
+                <h1 id="direction_11">Read the essay and answer the questions.</h1>
+                <div id="text_container_11">
+                    <p>Before the advent of computers and modern technology, people communicating over long distances used traditional means such as letters and the telephone. Nowadays we have a vast array of communication tools which can complete this task, ranging from email to instant messaging and video calls. While the present and previous means of communication are similar in their general form, they differ in regard to their speed and the range of tools available. <br><br>
+
+                    One similarity between current and previous methods of communication relates to the form of communication. In the past, both written forms such as letters were frequently used, in addition to oral forms such as telephone calls. Similarly, people nowadays use both of these forms. Just as in the past, written forms of communication are prevalent, for example via email and text messaging. In addition, oral forms are still used, including the telephone, mobile phone, and voice messages via instant messaging services.  <br><br>
+                        
+                    However, there are clearly many differences in the way we communicate over long distances, the most notable of which is speed. This is most evident in relation to written forms of communication. In the past, letters would take days to arrive at their destination. In contrast, an email arrives almost instantaneously and can be read seconds after it was sent. In the past, if it was necessary to send a short message, for example at work, a memo could be passed around the office, which would take some time to circulate. This is different from the current situation, in which a text message can be sent immediately. <br><br>
+                        
+                    Another significant difference is the range of communication methods. Fifty years ago, the tools available for communicating over long distances were primarily the telephone and the letter. By comparison, there are a vast array of communication methods available today. These include not only the telephone, letter, email and text messages already mentioned, but also video conferences via software such as Skype or mobile phone apps such as WeChat, and social media such as Facebook and Twitter.  <br><br>
+                        
+                    In conclusion, methods of communication have greatly advanced over the past fifty years. While there are some similarities, such as the forms of communication, there are significant differences, chiefly in relation to the speed of communication and the range of communication tools available. There is no doubt that technology will continue to progress in future, and the advanced tools which we use today may one day also become outdated. Resource taken from https://www.eapfoundation.com/writing/essays/candc/ <br><br></p>
+                </div>
+                <div id="question_container_11">
+                    <p id="questions_11"><strong>Question 1.</strong> What two things are being compared or contrasted? <br>
+                    <strong>Question 2.</strong> What kind of relationships are there in paragraphs 2, 3, and 4 (comparison, contrast or both)?<br>
+                    Paragraph 2:__________       Paragraph 3:_____________      Paragraph 4: _____________<br>
+                    <strong>Question 3.</strong> Write a comparison word and a contrast word from the essay.<br>
+                    <strong>Question 4.</strong> What kind of pattern of organization does the essay follow (Point-by-point Method or Block Method?)</p>
+                </div>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_11">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_11">300</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_11_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_11_1">0</label>
+                    <label class="checkbox" id="show_points_11_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_11_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_11_2">0</label>
+                    <label class="checkbox" id="show_points_11_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_11_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_11_3">0</label>
+                    <label class="checkbox" id="show_points_11_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_11_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_11_4">0</label>
+                    <label class="checkbox" id="show_points_11_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_11_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_11_5">0</label>
+                    <label class="checkbox" id="show_points_11_5">0</label>
+                </div>
+                <button class="button_close" id="close_11">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_12" class="modal_container">
+            <div class="modal">
+                <h1>Watch the video and fill in the blanks with the comparison and contrast words.</h1>
+                <h2 class="rubric_title" id="rubric_title_12">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_12">25 - 29 Right Answers - <strong>100%</strong><br> 19 - 24 Right Answers - <strong>80%</strong> <br> 14 - 18 Right Answers - <strong>60%</strong> <br> 8 - 13 Right Answers - <strong>40%</strong> <br> 3 - 7 Right Answers - <strong>20%</strong> <br> 1-2 Right Answers - <strong>10%</strong> <br> 0 Right Answers - <strong>0%</strong> </p>
+                <div id="video_12">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_TtA8iVA9zc?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p id="text_12"><strong>(0:01)</strong> Did you know that the human eye and the camera have many <strong>(1)_____? </strong><br> <strong>(0:07)</strong> <strong>(2)_____</strong> before we begin or journey into these <strong>(3) ______.</strong><strong>(0:17)</strong> Digital<br> cameras <strong>(4)______</strong> all cameras before them require light to work. <strong>(0:21)</strong> Light tends <br> to travel in a straight line <strong>(5)____</strong> it also bounces off objects.<strong>(0:32)</strong> It bounces back <br> in a straight line <strong>(6)____</strong> at the same angle with which it hit the object. <strong>(0:52)</strong> Today's <br> advanced digital cameras <strong>(7)____</strong>employ the same principles. <strong>(1:21) (8)___</strong> for this to <br> happen, first light needs to hit the pixels <strong>(9)____</strong> the light needs to hit. <strong>(1:33)</strong> Let's <br>take a look at all the things eyes and cameras have <strong>(10)_____.</strong> <strong>(1:58)</strong> It acts in<br> <strong>(11)______</strong> to the camera lens.<strong>(2:04)</strong> The curvature on <strong>(12)______</strong> the cornea and the <br> camera lens allow them a larger field of view to the right and left <strong>(13)_________</strong> <br><strong></strong> just to the front. <strong>(2:35)</strong> This is exactly how the aperture functions on a <br> camera  letting in more or less light to focus on <strong>(14)_____</strong> objects. <strong>(2:42)</strong> It covers all <br> <strong>(15)_____</strong> a small part of the lens. <strong>(3:39)</strong> The sensors collect all the information to <br> form an image <strong>(16)_____</strong> that is not where the <strong>(17)_____</strong> end. <strong>(3:47)</strong> The eye and the <br>camera are also <strong>(18)_____</strong> in their abilities. <strong>(3:55)</strong> Most people can focus on <strong>(19)____</strong><br> objects close up and objects far-away. <strong>(4:02)</strong> A camera can do the exact <strong>(20)____</strong><br>thing by changing the distance between the lens and the film <strong>(21)_____</strong> the eye<br> and camera have <strong>(22)______</strong> abilities they also have <strong>(23)______ </strong>limitations. <strong><br>(24)______</strong> the eye and the camera have a limited scope <br> of view. <strong>(25)______,</strong> the camera can greatly enhance its <br> field of view using <strong>(26)_____</strong> lenses. <strong>(4:28)</strong> We could <br>argue that the eye is more limited than the camera <strong><br>(27)_____</strong> the reality is much more complex than that. <strong><br>(4:34)</strong> <strong>(28)______</strong> a camera is controlled by the human <br> hand, an eye functions instintively all the time adjusting to <br>its environment. So <strong>(5:12) (29)_______</strong> cameras may not <br> be prone to nearsightedness  or macular degeneration, they <br> are also not as good at adapting as our eyes. </p>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_12">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_12">300</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_12_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_12_1">0</label>
+                    <label class="checkbox" id="show_points_12_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_12_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_12_2">0</label>
+                    <label class="checkbox" id="show_points_12_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_12_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_12_3">0</label>
+                    <label class="checkbox" id="show_points_12_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_12_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_12_4">0</label>
+                    <label class="checkbox" id="show_points_12_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_12_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_12_5">0</label>
+                    <label class="checkbox" id="show_points_12_5">0</label>
+                </div>
+                <button id="start_timer_12" class="start_timer">Start timer</button>
+                <button class="button_close" id="close_12">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_13" class="modal_container">
+            <div class="modal">
+                <h2 class="rubric_title" id="rubric_title_13">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_13"> 4 Right answers <br> <strong>100%</strong> <br><br> 3 Right answers <br> <strong>70%</strong> <br><br> 2 Right answers <br> <strong>50%</strong> <br><br>
+                1 Right answer <br> <strong>30%</strong>
+                <h1>Direction. Read the paragraph and answer the questions.</h1>
+                <div id="text_13">
+                    <p>Even though Arizona and Rhode Island are both states of the U.S., they are strikingly different in many ways. For example, the physical size of each state is different. Arizona is large, having an area of 114,000 square miles, whereas Rhode Island is only about a tenth the size, having an area of only 1,214 square miles. Another difference is in the size of the population of each state. Arizona has about four million people living in it, but Rhode Island has less than one million. The two states also differ in the kinds of natural environments that each has. For example, Arizona is a very dry state, consisting of large desert areas that do not receive much rainfall every year. However, Rhode Island is located in a temperate zone and receives an average of 44 inches of rain per year. In addition, while Arizona is a landlocked state and thus has no seashore, Rhode Island lies on the Atlantic Ocean and does have a significant coastline. <br>Resource Taken from <br> http://soda.ustadistancia.edu.co/enlinea/dianacelis_WRITING/unit_2_how_to_write_a_comparison_and_contrast_<br>paragraph.html
+
+                    </p>
+                </div>
+                <div id="questions_13">
+                    <p><strong>Question 1.</strong> What relationship is widely used in this paragraph (comparison, contrast, or both)? <br><br> <strong>Question 2. </strong>What two things are being compared or contrasted? <br><br> <strong>Question 3.</strong> What are three of the comparison and/or contrast transitions used in the paragraph?<br><br> <strong>Question 4.</strong> What kind of pattern of organization is used in this paragraph <br> (Point-by-point method or Block-method)? </p>
+                </div>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_13">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_13">300</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_13_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_13_1">0</label>
+                    <label class="checkbox" id="show_points_13_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_13_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_13_2">0</label>
+                    <label class="checkbox" id="show_points_13_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_13_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_13_3">0</label>
+                    <label class="checkbox" id="show_points_13_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_13_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_13_4">0</label>
+                    <label class="checkbox" id="show_points_13_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_13_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_13_5">0</label>
+                    <label class="checkbox" id="show_points_13_5">0</label>
+                </div>
+                <button class="button_close" id="close_13">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_14" class="modal_container">
+            <div class="modal">
+                <h2 class="rubric_title" id="rubric_title_14">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_14"> 4 Right answers <br> <strong>100%</strong> <br><br> 3 Right answers <br> <strong>70%</strong> <br><br> 2 Right answers <br> <strong>50%</strong> <br><br>
+                1 Right answer <br> <strong>30%</strong>
+                <h1>Direction. Read the paragraph and answer the questions.</h1>
+                <div id="text_14">
+                    <p>My hometown and my college town have several things in common. First, my hometown, Gridlock, is a small town. It has a population of only about 10,000 people. Located in a rural area, Gridlock is surrounded by many acres of farmland which are devoted mainly to growing corn and soybeans. Gridlock also contains a college campus, Neutron College, which is famous for its Agricultural Economics program as well as for its annual Corn-Watching Festival. As for my college town, Subnormal, it too is small, having a population of about 11,000 local residents, which swells to 15,000 people when students from the nearby college are attending classes. Like Gridlock, Subnormal lies in the center of farmland which is used to raise hogs and cattle. Finally, Subnormal is similar to Gridlock in that it also boasts a beautiful college campus, called Quark College. This college is well known for its Agricultural Engineering department and also for its yearly Hog-Calling Contest.
+                    <br>Resource Taken from <br>http://soda.ustadistancia.edu.co/enlinea/dianacelis_WRITING/unit_2_how_to_write_a_comparison_and_contrast_<br>paragraph.html
+                    </p>
+                </div>
+                <div id="questions_14">
+                    <p><strong>Question 1.</strong> What relationship is widely used in this paragraph (comparison, contrast, or both)? <br><br> <strong>Question 2. </strong>What two things are being compared or contrasted? <br><br> <strong>Question 3.</strong> What are three of the comparison and/or contrast transitions used in the paragraph?<br><br> <strong>Question 4.</strong> What kind of pattern of organization is used in this paragraph <br> (Point-by-point method or Block-method)? </p>
+                </div>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_14">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_14">300</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_14_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_14_1">0</label>
+                    <label class="checkbox" id="show_points_14_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_14_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_14_2">0</label>
+                    <label class="checkbox" id="show_points_14_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_14_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_14_3">0</label>
+                    <label class="checkbox" id="show_points_14_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_14_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_14_4">0</label>
+                    <label class="checkbox" id="show_points_14_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_14_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_14_5">0</label>
+                    <label class="checkbox" id="show_points_14_5">0</label>
+                </div>
+                <button class="button_close" id="close_14">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_15" class="modal_container">
+            <div class="modal">
+                <h1>Direction. Identify each organization pattern of a comparison/contrast essay.</h1>
+                <h2 class="rubric_title" id="rubric_title_15">Rubric</h2>
+                <p class="rubric_content" id="rubric_content_15"> 1 Right answer <strong>100%</strong>
+                <div id="text_15">
+                    <img id="img_15"src="assets/Patterns_chart.png" alt="Chart of Patterns">
+                </div>
+                <div id="questions_15">
+                    <p><strong>1. A: Point-by-point pattern B: Block-method </strong><br><br>
+                    <strong>2. A: Block-method B: Point-by-point pattern</strong>  </p>
+                </div>
+                <span class="time_chart"><strong>Time</strong></span>
+                <span class="timer" id="countdown_15">0</span>
+                <span class="points_chart"><strong>Points</strong></span>
+                <span class="points" id="question_points_15">300</span>
+                <div class="participant_points_time">
+                    <label class="checkbox"></label>
+                    <label class="checkbox">Name</label>
+                    <label class="checkbox">Time</label>
+                    <label class="checkbox">Points</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_15_1"/>
+                    <label class="checkbox">Sahet</label>
+                    <label class="checkbox" id="show_time_15_1">0</label>
+                    <label class="checkbox" id="show_points_15_1">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_15_2"/>
+                    <label class="checkbox" >Nabat</label>
+                    <label class="checkbox" id="show_time_15_2">0</label>
+                    <label class="checkbox" id="show_points_15_2">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_15_3"/>
+                    <label class="checkbox">Itzel</label>
+                    <label class="checkbox" id="show_time_15_3">0</label>
+                    <label class="checkbox" id="show_points_15_3">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_15_4"/>
+                    <label class="checkbox">Leo</label>
+                    <label class="checkbox" id="show_time_15_4">0</label>
+                    <label class="checkbox" id="show_points_15_4">0</label>
+                    <input class="checkbox" type="checkbox" id="checkbox_15_5"/>
+                    <label class="checkbox">Mimi</label>
+                    <label class="checkbox" id="show_time_15_5">0</label>
+                    <label class="checkbox" id="show_points_15_5">0</label>
+                </div>
+                <button class="button_close" id="close_15">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_16" class="modal_container">
+            <div class="modal">
+                <h1>Level 1 Achieved! This is awesome! You’re awesome! Way to go!</h1>
+                <iframe src="https://giphy.com/embed/kBZBlLVlfECvOQAVno" width="480" height="361" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dogs-good-job-pups-kBZBlLVlfECvOQAVno">via GIPHY</a></p>
+                <button id="close_16">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_17" class="modal_container">
+            <div class="modal">
+                <h1>Level 2 Achieved! You are a walking encyclopedia of comparison and contrast!</h1>
+                <iframe src="https://giphy.com/embed/KbHnSVb1wFcR31Xi1H" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/appexchange-cat-thumbs-up-great-job-KbHnSVb1wFcR31Xi1H">via GIPHY</a></p>
+                <button id="close_17">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_18" class="modal_container">
+            <div class="modal">
+                <h1>Level 3 Achieved! You are in a class of your own!</h1>
+                <iframe src="https://giphy.com/embed/ebFG4jcnC1Ny8" width="480" height="333" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/surprised-cat-funny-ebFG4jcnC1Ny8">via GIPHY</a></p>
+                <button id="close_18">Close</button>
+            </div> 
+        </div>
+
+        <div id="modal_container_19" class="modal_container">
+            <div class="modal">
+                <div class="frame"><h1> Certificate of Achievement</h1>
+                </div>
+                <div id="dec_container">
+                    <img id="dec_element"src="./assets/decoration_certificate.png" alt="">
+                </div>
+                <div id="line_decoration_1">
+                </div>
+                <div id="line_decoration_2">
+                </div>
+                <div id="text_container_19_1">
+                    <p id="text_certificate_1">This certificate is presented to</p>
+                </div>
+                <div id="container_name_winner">
+                    <span id="name_winner">Name</span>
+                </div>
+                <div id="text_container_19_2">
+                    <p id="text_certificate_1">for your outstanding performance at the Comparison and Contrast Contest. <br> 
+                        Congratulations on your well-deserved success.</p>
+                </div>
+                <div id="medal_container">
+                    <img id="medal" src="./assets/medal.png" alt="">
+                </div>
+            </div> 
+            <button id="close_19">Close</button>
+        </div>
+        
+        
+        
+    </main>
+    <footer>
+        <div class="participants">
+            <div class="participant-1">
+                <div class="draw">
+                    <div class="name"><strong>Sahet</strong></div>
+                    <div class="face">
+                        <!-- <div class="left_eye"></div>
+                        <div class="pupil_left"></div>
+                        <div class="right_eye"></div>
+                        <div class="pupil_right"></div>
+                        <div class="mouth"></div> -->
+                        🙂
+                    </div>
+                </div>
+                <div class="score">
+                    <div class="display_score">
+                        <span id="chart_1"><strong>0</strong></span>
+                    </div>
+                    <div class="control_score">
+                        <button id="button_up_1">+</button>
+                        <button id="button_down_1">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="participant-1">
+                <div class="draw">
+                    <div class="name"><strong>Nabat</strong></div>
+                    <div class="face">
+                        🙂
+                    </div>
+                    <div class="score">
+                        <div class="display_score">
+                            <span id="chart_2"><strong>0</strong></span>
+                        </div>
+                        <div class="control_score">
+                            <button id="button_up_2">+</button>
+                            <button id="button_down_2">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="participant-1">
+                <div class="draw">
+                    <div class="name"><strong>Itzel</strong></div>
+                    <div class="face">
+                        🙂
+                    </div>
+                    <div class="score">
+                        <div class="display_score">
+                            <span id="chart_3"><strong>0</strong></span>
+                        </div>
+                        <div class="control_score">
+                            <button id="button_up_3">+</button>
+                            <button id="button_down_3">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="participant-1">
+                <div class="draw">
+                    <div class="name"><strong>Leo</strong></div>
+                    <div class="face">
+                        🙂
+                    </div>
+                    <div class="score">
+                        <div class="display_score">
+                            <span id="chart_4"><strong>0</strong></span>
+                        </div>
+                        <div class="control_score">
+                            <button id="button_up_4">+</button>
+                            <button id="button_down_4">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="participant-1">
+                <div class="draw">
+                    <div class="name"><strong>Mimi</strong></div>
+                    <div class="face">
+                        🙂
+                    </div>
+                    <div class="score">
+                        <div class="display_score">
+                            <span id="chart_5"><strong>0</strong></span>
+                        </div>
+                        <div class="control_score">
+                            <button id="button_up_5">+</button>
+                            <button id="button_down_5">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="winner">Winner</button>
+    </footer>
+    <script src="game.js"></script>
+</body>
+</html>
